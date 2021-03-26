@@ -12,3 +12,5 @@ git config --global pull.rebase true
 
 npm i -g gitpkg
 npm i -g npm-check-updates
+
+export EDITOR=vim
