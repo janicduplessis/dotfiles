@@ -3,6 +3,8 @@ printenv
 sudo apt-get update
 sudo apt-get install -y zsh
 
+curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash
+
 if [ -n "$NPM_ACCESS_TOKEN" ]; then
   echo "//registry.npmjs.org/:_authToken=$NPM_ACCESS_TOKEN" > ~/.npmrc
 fi
