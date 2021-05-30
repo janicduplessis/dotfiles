@@ -2,6 +2,7 @@ DOTFILES=/workspaces/.codespaces/.persistedshare/dotfiles
 
 cp $DOTFILES/zshrc ~/.zshrc
 cp $DOTFILES/zsh_plugins.txt ~/.zsh_plugins.txt
+cp $DOTFILES/p10k.zsh ~/.p10k.zsh
 cp $DOTFILES/z.sh ~/z.sh
 
 touch ~/.z
