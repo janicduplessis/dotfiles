@@ -4,7 +4,7 @@ cp $DOTFILES/zshrc ~/.zshrc
 cp $DOTFILES/zsh_plugins.txt ~/.zsh_plugins.txt
 cp $DOTFILES/z.sh ~/z.sh
 
-curl -sfL git.io/antibody | sh -s - -b /usr/local/bin
+curl -sfL git.io/antibody | sudo sh -s - -b /usr/local/bin
 curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash
 
 if [ -n "$NPM_ACCESS_TOKEN" ]; then
