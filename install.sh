@@ -1,4 +1,7 @@
-printenv
+DOTFILES=/workspaces/.codespaces/.persistedshare/dotfiles
+
+cp $DOTFILES/.zshrc $HOME/.zshrc
+cp $DOTFILES/z.sh $HOME/z.sh
 
 sudo apt-get update
 sudo apt-get install -y zsh
