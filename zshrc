@@ -1,7 +1,5 @@
 source <(antibody init)
 
-antibody bundle < ~/.zsh_plugins.txt
-
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -12,6 +10,8 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 DISABLE_UPDATE_PROMPT="true"
 
+antibody bundle < ~/.zsh_plugins.txt
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -20,13 +20,9 @@ plugins=(git osx yarn z zsh-autosuggestions zsh-syntax-highlighting zsh-completi
 
 autoload -U compinit && compinit
 
-source $ZSH/oh-my-zsh.sh
-
 # User configuration
 
 ~/z.sh
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
