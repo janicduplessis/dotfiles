@@ -8,6 +8,10 @@ cp $DOTFILES/z.sh ~/z.sh
 touch ~/.z
 
 curl -sfL git.io/antibody | sudo sh -s - -b /usr/local/bin
+curl https://get.volta.sh | bash
+
+volta install node
+volta install yarn
 
 git config --global push.default current
 git config --global pull.rebase true
