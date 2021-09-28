@@ -7,10 +7,10 @@ cp $DOTFILES/z.sh ~/z.sh
 
 touch ~/.z
 
-curl -sfL git.io/antibody | sudo sh -s - -b /usr/local/bin
+curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 curl https://get.volta.sh | bash
 
-volta install node
+volta install node@16
 volta install yarn
 
 git config --global push.default current
